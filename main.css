@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #013241;
+    font-family: 'Cabin', sans-serif;
+}
+main{
+    width: 60vw;
+    margin: 8vh auto;
+}
+.container > button{
+    background-color: #31f5c6;
+    color:  #013241;
+    padding: 1rem;
+    border:0;
+    font-weight: 550;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+.container h1{
+    color: #31f5c6;
+    font-size: clamp(2.5rem, 10vw, 8rem);
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    font-style: 'Sen', Arial, Helvetica, sans-serif;;
+}
+.container p{
+    color: #a3b5c0;
+    font-size: 1.1rem;
+    position: relative;
+    top: -6vh;
+    line-height: 1.5rem;
+    width: 40%;
+    letter-spacing: 1px;
+}
+.blob{
+    position: absolute;
+    z-index: -1;
+}
+.avatar3{
+    top: 16vh;
+    left: 14vw;
+}
+.avatar1{
+    top: 43vh;
+    right: 20vw;
+}
+.avatar2{
+    top: 8vh;
+    right: 25vw;
+}
+.avatar4{
+    bottom: 8vh;
+    right: 25vw;
+}
+.avatar5{
+    top: 16vh;
+    right: 40vw;
+}
+.avatar6{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 3rem;
+    top: 50vh;
+    right: 50vw;
+    /* z-index:2; */
+}
+footer{
+    color: #a3b5c0;
+    width: 60vw;
+    margin: 5vh auto;
+    display: flex;
+    /* border: 1px solid red; */
+}
+footer span{
+    font-size: 1.3rem;
+    padding: 1rem;
+    letter-spacing: 1px;
+}
+footer img{
+    width: 3rem;
+    height: 3rem;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+
+    .avatar1, .avatar4,.avatar5{
+        display: none;
+    }
+    .avatar3{
+        width: 7rem;
+        height:7rem;
+        left: 6vw;
+        top:15vh;
+    }
+    .avatar6{
+        width: 10rem;
+        height:10rem;
+        border-radius: 5rem;
+        right: 5vw;
+        top:60vh;}
+    .avatar2{
+        width: 9rem;
+        height:9rem;
+        right:5vw;
+        top:15vh;
+    }
+    main{
+        width: 80vw;
+        margin: 12vh auto;
+    }
+    .container h1{
+        margin: 14vh 0 5vh 0 ;
+    }
+    .container p{
+        width: 80%;
+        top:0;
+        margin-bottom: 8vh;
+    }
+
+    footer{
+        width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+    /* .avatar6{
+        right: 40vw;
+        z-index:-1;
+    } */
+    main, footer{
+        width: 70vw;
+    }
+    .avatar2{
+        right: 15vw;
+    }
+    .avatar3{
+        width: 7rem;
+        height: 7rem;
+    }
+    
+}
